@@ -1,5 +1,7 @@
+import bread from './components/bread.js';
+
 const init = () => {
-    console.log('test');
+    bread.printBreadList();
 };
 
 init();
