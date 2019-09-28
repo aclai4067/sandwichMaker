@@ -47,6 +47,10 @@ const printCheeseList = () => {
     let cheeseString = `
         <h5>Cheese</h5>
         <ul>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" name="cheeses" class="custom-control-input none cheeseItem" id="no-cheese0">
+            <label class="custom-control-label" for="no-cheese0">No Cheese</label>
+        </div>
     `;
     for (let i = 0; i < cheeseArr.length; i++) {
         cheeseString +=`
@@ -58,6 +62,12 @@ const printCheeseList = () => {
     }
     cheeseString += `</ul>`
     utilities.printToDom('cheeseDiv', cheeseString);
+    const cheeseOptions = document.getElementsByClassName('cheeseItem');
+    for(let n = 0; n <= cheeseArr.length; n++){
+        cheeseOptions[n].addEventListener('click', (e) => {
+            utilities.clearSelection(e, cheeseArr);
+        })
+    }
 };
 
 export default { printCheeseList, getCheeseSelection };

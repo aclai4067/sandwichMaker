@@ -47,6 +47,10 @@ const printVeggieList = () => {
     let veggieString = `
         <h5>Veggies</h5>
         <ul>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" name="veggies" class="custom-control-input none veggieItem" id="no-veggie0">
+            <label class="custom-control-label" for="no-veggie0">No Veggies</label>
+        </div>
     `;
     for (let i = 0; i < veggieArr.length; i++) {
         veggieString +=`
@@ -58,6 +62,12 @@ const printVeggieList = () => {
     }
     veggieString += `</ul>`
     utilities.printToDom('veggieDiv', veggieString);
+    const veggieOptions = document.getElementsByClassName('veggieItem');
+    for(let n = 0; n <= veggieArr.length; n++){
+        veggieOptions[n].addEventListener('click', (e) => {
+            utilities.clearSelection(e, veggieArr);
+        })
+    }
 };
 
 export default { printVeggieList, getVeggieSelection };

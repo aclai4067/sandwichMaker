@@ -3,13 +3,13 @@ import utilities from '../helpers/utilities.js';
 const breadArr = [
     {
         id: 'bread0',
-        type: 'Wheat Wrap',
-        price: 200
+        type: 'Five Grain',
+        price: 250
     },
     {
         id: 'bread1',
-        type: 'Five Grain',
-        price: 250
+        type: 'Wheat Wrap',
+        price: 175
     },
     {
         id: 'bread2',
@@ -24,7 +24,12 @@ const breadArr = [
     {
         id: 'bread4',
         type: 'Ciabatta',
-        price: 100
+        price: 200
+    },
+    {
+        id: 'bread5',
+        type: 'Brioche',
+        price: 200
     }
 ];
 
