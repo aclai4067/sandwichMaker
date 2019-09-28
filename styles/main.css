@@ -1,5 +1,55 @@
 body{
     background-color: lightslategrey;
+    font-family: 'Economica', sans-serif;
+}
+
+.btn-light{
+    border: 3px solid darkslategrey;
+    border-radius: 5px;
+    color: darkslategrey!important;
+}
+
+.btn-outline-light:active{
+    color: #f8f9fa!important;
+    background-color: transparent!important;
+}
+
+#btnDiv{
+    margin: 1em;
+    padding-right: 2em;
+}
+
+header{
+    background: linear-gradient(darkslategrey, transparent);
+    color: darkgoldenrod;
+    height: 6em;
+    font-family: 'Kalam', sans-serif;
+}
+
+h1{
+    padding: .5em 0;
+}
+
+.ingredientDiv{
+    padding: 1em;
+}
+
+.ingredientDiv h5, .summaryHeaders h4{
+    border-bottom: 2px solid darkgoldenrod;
+    color: darkslategrey;
+    padding: 0;
+    margin: .5em;
+}
+
+#orderSummary header{
+    background: radial-gradient(#2f4f4f, transparent 400px);
+    color: darkgoldenrod;
+    height: 6em;
+    font-family: 'Kalam', sans-serif;
+}
+
+#orderSummary h2{
+    margin: 1em 0;
 }
 
 .priceBreadSlice{
@@ -10,6 +60,7 @@ body{
 
 .priceText{
     color: darkgoldenrod;
+    font-family: 'Economica', sans-serif;
     position: absolute;
     top: 30%;
     left: 38%;
