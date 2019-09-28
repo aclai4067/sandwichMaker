@@ -1,5 +1,5 @@
 import bread from './bread.js';
-// import cheese from './cheese.js';
+import cheese from './cheese.js';
 // import condiment from './condiment.js';
 // import meat from './meat.js';
 // import veggie from './veggie.js';
@@ -29,13 +29,13 @@ const createFinalOrder = (ingredients) => {
 
 const orderEvent = () => {
     const breadSelection = bread.getBreadSelection();
-    // const cheeseSelection = cheese.getBreadSelection();
-    // const condimentSelection = condiment.getBreadSelection();
-    // const meatSelection = meat.getBreadSelection();
-    // const veggieSelection = veggie.getBreadSelection();
-    // const wholeSandwich = breadSelection.concat(cheeseSelection);
+    const cheeseSelection = cheese.getCheeseSelection();
+    // const condimentSelection = condiment.getCondimentSelection();
+    // const meatSelection = meat.getMeatSelection();
+    // const veggieSelection = veggie.getVeggieSelection();
+    const wholeSandwich = breadSelection.concat(cheeseSelection);
     if (breadSelection[0].type){
-        createFinalOrder(breadSelection);
+        createFinalOrder(wholeSandwich);
     };
 };
 
