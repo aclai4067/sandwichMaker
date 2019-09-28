@@ -1,6 +1,6 @@
 import bread from './bread.js';
 import cheese from './cheese.js';
-// import condiment from './condiment.js';
+import condiment from './condiment.js';
 import meat from './meat.js';
 import veggie from './veggie.js';
 import utilities from '../helpers/utilities.js';
@@ -30,10 +30,10 @@ const createFinalOrder = (ingredients) => {
 const orderEvent = () => {
     const breadSelection = bread.getBreadSelection();
     const cheeseSelection = cheese.getCheeseSelection();
-    // const condimentSelection = condiment.getCondimentSelection();
+    const condimentSelection = condiment.getCondimentSelection();
     const meatSelection = meat.getMeatSelection();
     const veggieSelection = veggie.getVeggieSelection();
-    const wholeSandwich = breadSelection.concat(cheeseSelection, meatSelection, veggieSelection);
+    const wholeSandwich = breadSelection.concat(cheeseSelection, condimentSelection, meatSelection, veggieSelection);
     if (breadSelection[0].type){
         createFinalOrder(wholeSandwich);
     };
