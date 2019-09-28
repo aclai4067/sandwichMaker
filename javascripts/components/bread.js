@@ -39,6 +39,7 @@ const getBreadSelection = () => {
             }
         }
     }
+    return selectedBreadArr;
 
 };
 
@@ -50,7 +51,7 @@ const printBreadList = () => {
     for (let i = 0; i < breadArr.length; i++) {
         breadString +=`
             <div class="custom-control custom-switch">
-            <input type="radio" name="breads" class="custom-control-input breadItem" id="${breadArr[i].id}">
+            <input type="radio" name="breads" class="custom-control-input breadItem" id="${breadArr[i].id}" required>
             <label class="custom-control-label" for="${breadArr[i].id}">${breadArr[i].type}</label>
             </div>
         `

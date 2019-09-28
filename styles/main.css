@@ -1,3 +1,16 @@
 body{
     background-color: lightslategrey;
 }
+
+.priceBreadSlice{
+    color: darkslategrey;
+    font-size: 10em;
+    position: relative;
+}
+
+.priceText{
+    color: darkgoldenrod;
+    position: absolute;
+    top: 30%;
+    left: 38%;
+}

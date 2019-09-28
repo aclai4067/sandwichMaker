@@ -7,17 +7,21 @@
     <title>Sandwich Maker</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/main.css">
+    <script src="https://kit.fontawesome.com/4342cac95b.js"></script>
 </head>
 <body>
     <div class='container'>
         <h1>Sandwhich Maker</h1>
-        <!-- <button type="button" class="btn btn-light">TEST</button> -->
-        <div class='row d-flex flex-wrap'>
+        <form class='row d-flex flex-wrap' onsubmit='return false'>
             <div id='breadDiv' class='col-2 offset-1'></div>
             <!-- <div id='cheeseDiv' class='col-2'></div>
             <div id='meatDiv' class='col-2'></div>
             <div id='veggieDiv' class='col-2'></div>
             <div id='condimentDiv' class='col-2'></div> -->
+            <div id='btnDiv' class='col-12'></div>
+        </form>
+        <div id='orderSummary' class='col-10 offset-1 row d-flex flex-wrap'>
+
         </div>
     </div>
     <script type='module' src="./javascripts/main.js"></script>
