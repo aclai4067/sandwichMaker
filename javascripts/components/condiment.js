@@ -45,8 +45,12 @@ const getCondimentSelection = () => {
 
 const printCondimentList = () => {
     let condimentString = `
-        <h5>Condiment</h5>
+        <h5>Condiments</h5>
         <ul>
+        <div class="custom-control custom-switch">
+            <input type="checkbox" name="condiments" class="custom-control-input none condimentItem" id="no-condiment0">
+            <label class="custom-control-label" for="no-condiment0">No Sauce</label>
+        </div>
     `;
     for (let i = 0; i < condimentArr.length; i++) {
         condimentString +=`
@@ -58,6 +62,12 @@ const printCondimentList = () => {
     }
     condimentString += `</ul>`
     utilities.printToDom('condimentDiv', condimentString);
+    const condimentOptions = document.getElementsByClassName('condimentItem');
+    for(let n = 0; n <= condimentArr.length; n++){
+        condimentOptions[n].addEventListener('click', (e) => {
+            utilities.clearSelection(e, condimentArr);
+        })
+    }
 };
 
 export default { printCondimentList, getCondimentSelection };

@@ -3,4 +3,18 @@ const printToDom = (divId, textToPrint) => {
     selectedDiv.innerHTML = textToPrint;
 };
 
-export default { printToDom };
+const clearSelection = (e, topping) => {
+    const eClass = e.target.classList.value;
+    console.log(eClass);
+    if (eClass.includes('none')){
+        for (let i = 0; i < topping.length; i++){
+            console.log(topping[i].id);
+            document.getElementById(topping[i].id).checked = false;
+        }
+    } else {
+        document.getElementById(`no-${topping[0].id}`).checked = false;
+    }
+
+};
+
+export default { printToDom, clearSelection };
