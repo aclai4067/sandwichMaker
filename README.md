@@ -1,35 +1,15 @@
 # Sandwich Maker
 
-## User Stories
-1.  As a user, when I come to the page, I should see checkboxes with all possible sandwich options
-2.  As a user, when I make my sandwich selections and click enter I should see a list of all the ingredients I have selected and their prices.
-3.  As a user, when I make my sandwich selections and click enter I should see a total cost for my sandwich.
+## Description
 
+Use application to select sandwich ingredients and get an order summary with price. 
 
-## Requirements
+## ScreenShots
+![sandwich maker page on load](https://raw.githubusercontent.com/aclai4067/sandwichMaker/master/screenshots/sandwich-maker-load.png)
+![sandwich maker page after clicking build order](https://raw.githubusercontent.com/aclai4067/sandwichMaker/master/screenshots/sandwich-maker-submit.png)
 
-Create a sandwich order form that allows the user to select all the ingredients for a custom deli sandwich. Each of the following should be separate modules:
-
-+ bread
-+ meat
-+ cheese
-+ condiments
-+ veggies
-+ sandwich
-
-Your project should have one HTML file that has:
-
-+ A section of options for each sandwich part 
-+ The ability to select multiple, or zero, choices for each section (such as turkey _and_ bacon, or "no meat") 
-+ An empty DOM element into which the final sandwich order and its cost will be inserted  
-
-The ingredient choices should be stored as JS objects that contain the 3 key value pairs: id, name, and price(in cents). 
-```
-{id: "meat1", name: "turkey", price: 90}
-```
-
-Make sure the ingredient objects cannot be accessed by the other modules except through an accessor (getter) method.  
-
-Each of your modules should be completely self contained.
-
-> Don't worry about exposing the prices to the user until you display the final cost. This is just an exercise, not a business model.
+## How to run
+* Clone down this project from [GitHub](https://github.com/aclai4067/sandwichMaker)
+* Install [http-server](https://npmjs.com/package/http-server) from npm
+* At the root of this project, run the following command: `hs -p 8080`
+* In your browser, navigate to `https://localhost:8080`
