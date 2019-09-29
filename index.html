@@ -6,19 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sandwich Maker</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Economica|Kalam&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
     <script src="https://kit.fontawesome.com/4342cac95b.js"></script>
 </head>
 <body>
+    <header>
+        <h1 class='container'>Sandwich Maker</h1>
+    </header>
     <div class='container'>
-        <h1>Sandwich Maker</h1>
         <form class='row d-flex flex-wrap' onsubmit='return false'>
-            <div id='breadDiv' class='col-sm-2 offset-1'></div>
-            <div id='cheeseDiv' class='col-sm-2'></div>
-            <div id='meatDiv' class='col-sm-2'></div>
-            <div id='veggieDiv' class='col-sm-2'></div>
-            <div id='condimentDiv' class='col-sm-2'></div>
-            <div id='btnDiv' class='col-12'></div>
+            <div id='breadDiv' class='ingredientDiv col-sm-2 offset-1'></div>
+            <div id='cheeseDiv' class='ingredientDiv col-sm-2'></div>
+            <div id='meatDiv' class='ingredientDiv col-sm-2'></div>
+            <div id='veggieDiv' class='ingredientDiv col-sm-2'></div>
+            <div id='condimentDiv' class='ingredientDiv col-sm-2'></div>
+            <div id='btnDiv' class='col-12 d-flex justify-content-end'></div>
         </form>
         <div id='orderSummary' class='col-10 offset-1 row d-flex flex-wrap'>
 
