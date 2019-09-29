@@ -31,7 +31,7 @@ const condimentArr = [
 const getCondimentSelection = () => {
     const selectedCondimentArr = [];
     const condimentCheckbox = document.getElementsByClassName('condimentItem');
-    for(let n = 0; n < condimentArr.length; n++){
+    for(let n = 0; n <= condimentArr.length; n++){
         const selectedCondimentId = condimentCheckbox[n].id;
         for(let x = 0; x < condimentArr.length; x++){
             if(condimentCheckbox[n].checked && selectedCondimentId === condimentArr[x].id){

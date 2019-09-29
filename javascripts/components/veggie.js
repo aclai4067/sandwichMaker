@@ -31,7 +31,7 @@ const veggieArr = [
 const getVeggieSelection = () => {
     const selectedVeggieArr = [];
     const veggieCheckbox = document.getElementsByClassName('veggieItem');
-    for(let n = 0; n < veggieArr.length; n++){
+    for(let n = 0; n <= veggieArr.length; n++){
         const selectedVeggieId = veggieCheckbox[n].id;
         for(let x = 0; x < veggieArr.length; x++){
             if(veggieCheckbox[n].checked && selectedVeggieId === veggieArr[x].id){

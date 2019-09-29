@@ -31,7 +31,7 @@ const cheeseArr = [
 const getCheeseSelection = () => {
     const selectedCheeseArr = [];
     const cheeseCheckbox = document.getElementsByClassName('cheeseItem');
-    for(let n = 0; n < cheeseArr.length; n++){
+    for(let n = 0; n <= cheeseArr.length; n++){
         const selectedCheeseId = cheeseCheckbox[n].id;
         for(let x = 0; x < cheeseArr.length; x++){
             if(cheeseCheckbox[n].checked && selectedCheeseId === cheeseArr[x].id){

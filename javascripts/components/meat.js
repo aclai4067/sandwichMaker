@@ -31,7 +31,7 @@ const meatArr = [
 const getMeatSelection = () => {
     const selectedMeatArr = [];
     const meatCheckbox = document.getElementsByClassName('meatItem');
-    for(let n = 0; n < meatArr.length; n++){
+    for(let n = 0; n <= meatArr.length; n++){
         const selectedMeatId = meatCheckbox[n].id;
         for(let x = 0; x < meatArr.length; x++){
             if(meatCheckbox[n].checked && selectedMeatId === meatArr[x].id){
