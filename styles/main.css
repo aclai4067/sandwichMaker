@@ -41,16 +41,16 @@ h1{
     margin: .5em;
 }
 
-#orderSummary header{
-    background: radial-gradient(#2f4f4f, transparent 400px);
+#orderSummary h2{
+    background-color: #2f4f4fbe;
+    border: 2px solid darkgoldenrod;
+    border-radius: 5px;
     color: darkgoldenrod;
-    height: 6em;
     font-family: 'Kalam', sans-serif;
+    padding: .25em;
+    margin-bottom: 1em;
 }
 
-#orderSummary h2{
-    margin: 1em 0;
-}
 
 .priceBreadSlice{
     color: darkslategrey;
@@ -62,6 +62,6 @@ h1{
     color: darkgoldenrod;
     font-family: 'Economica', sans-serif;
     position: absolute;
-    top: 30%;
-    left: 38%;
+    top: 2em;
+    left: 40%;
 }

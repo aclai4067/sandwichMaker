@@ -7,9 +7,7 @@ import utilities from '../helpers/utilities.js';
 
 const createFinalOrder = (ingredients) => {
     let orderString = `
-        <header class='col-12 text-center align-items-center'>
-        <h2>Order Summary</h2>
-        </header>
+        <h2 class='col-12 text-center'>Order Summary</h2>
         <div class='col-sm-8'>
         <div class='summaryHeaders row'>
             <h4 class='col-7'>Ingredients</h4>
